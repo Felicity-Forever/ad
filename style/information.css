@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 40px;    
+    background-color: #dddddd;
+    font-family: "楷体";
+    font-size: 35px;
+    line-height: 40px;
+    padding-left: 50px;
+}
+#main{
+    margin: 100px;
+}
+p{
+    padding: 15px 0;
+}

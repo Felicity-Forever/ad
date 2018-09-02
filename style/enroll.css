@@ -1,0 +1,15 @@
+.main{
+    width: 400px;
+    height: 450px;
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+h2{
+    text-align: center;
+    margin: 30px auto;
+}
+#username, #password, #repassword, #enroll{
+    width: 360px;
+    margin: 30px 20px;
+}

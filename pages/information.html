@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="分类广告网">
+        <meta name="author" content="13小组">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="icon" href="../images/AD.jpg" />
+        <title>广告详情</title>
+        <link href="../style/information.css" rel="stylesheet" />
+        <script src="../cpnts/vue/vue.min.js"></script>
+        <script src="../cpnts/jquery/jquery-3.3.1.min.js"></script>
+    </head>
+
+    <body>
+        <nav>广告详情</nav>
+        <div id="main">
+            <div v-for="a in rows" id="content">
+                <p>名称：{{a.name}}</p>
+                <p>图片：<img :src="a.image" width="200pt" /></p>
+                <p>简介：{{a.remark}}</p>
+                <p>联系人：{{a.contact}}</p>
+                <p>联系方式：{{a.contactWay}}</p>
+            </div>
+        </div>
+    </body>
+    <script>$(document).ready(function () {
+        $.getJSON("../data/information.json", function (result, status) {
+            var v = new Vue({
+                el: '#main',
+                data: {
+                    rows: result
+                }
+            })
+            });
+        });
+    </script>
+    
+</html>

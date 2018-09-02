@@ -1,0 +1,28 @@
+.main{
+    width: 400px;
+    height: 450px;
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+h2{
+    text-align: center;
+    margin: 30px auto;
+}
+#userName, #passWord, #login, .alert{
+    width: 360px;
+    margin: 30px 20px;
+}
+.enroll{
+    color: #787d82;
+    float: left;
+    margin-left: 20px;
+}
+.forget{
+    color: #787d82;
+    float: right;
+    margin-right: 20px;
+}
+a:link{
+    color: #787d82;
+}
