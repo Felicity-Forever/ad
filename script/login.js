@@ -11,8 +11,8 @@ let app = new Vue ({
             app.hasError = false;
             let randomUrl = 
                 Math.round(Math.random()) === 1 ? 
-                "http://cumtlyq.coding.me/ad/login-failure.json" : 
-                "http://cumtlyq.coding.me/ad/login-success.json";
+                "https://cumtlyq.github.io/ad/data/login-failure.json" : 
+                "https://cumtlyq.github.io/ad/data/login-success.json";
             qwest.setDefaultOptions({ cache: true });
             qwest.get(
                 randomUrl,
